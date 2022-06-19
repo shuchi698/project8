@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:display=swap');
+
+.LatestStories {
+    width: 80%;
+    margin: 64px auto;
+}
+
+.latest-stories-heading {
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    padding-bottom: 10px;
+    border-bottom: 4px solid #F08080;
+    width: fit-content;
+    background-image: linear-gradient(
+        -225deg,
+        #231557 0%,
+        #44107a 29%,
+        #ff1361 67%,
+        #fff800 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+}
+
+.latest-stories-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 48px 0px;
+    padding: 48px 0px;
+    border-top: 3px solid #F0F0F0;
+    border-bottom: 3px solid #F0F0F0;
+    gap: 32px;
+}
+
+.LatestStoriesComponent {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.LatestStoriesComponent a {
+    text-decoration: none;
+    color: black;
+    position: relative;
+}
+
+.latest-stories-title {
+    font-size: 28px;
+    font-family: 'Montserrat', sans-serif;
+    background-image: linear-gradient(
+    to right,
+        darkcyan,
+        darkcyan 50%,
+        #000 50%
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.latest-stories-title:before {
+    content: '';
+    background: darkcyan;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    transition: all 0.3s ease-in-out;
+}
+
+.latest-stories-title:hover {
+    background-position: 0;
+}
+
+.latest-stories-title:hover::before {
+    width: 100%;
+}
+
+.LatestStoriesComponent p {
+    font-size: 17px;
+    color: #908D8D;
+    margin-top: 20px;
+}
+.latest-stories-details {
+    margin: 60px 0px 0px;
+    font-family: 'Montserrat', sans-serif;
+    color: #404040;
+    font-size: 17px;
+}
+
+.latest-stories-type {
+    font-weight: 600;
+}
+
+.latest-stories-date {
+    letter-spacing: 0.85px;
+    opacity: 0.48;
+}
+
+.view-more {
+    cursor: pointer;
+    font-size: 20px;
+    margin: 48px 0 140px;
+    color: #A2A2A2;
+    font-family: 'Montserrat', sans-serif;
+    width: fit-content;
+}
+
+.view-more i {
+    color: #F08080;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 1120px) {
+
+    .latest-stories-flex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .LatestStoriesComponent {
+        width: 100%;
+    }
+
+    .latest-stories-details {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    .latest-stories-heading {
+        font-size: 28px;
+    }
+
+    .latest-stories-title {
+        font-size: 20px;
+    }
+
+    .LatestStoriesComponent p, .latest-stories-details {
+        font-size: 16px;
+    }
+}

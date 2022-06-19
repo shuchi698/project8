@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:display=swap');
+
+.Footer {
+    background-color: black;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 24px;
+}
+
+@media screen and (max-width: 576px) {
+    footer {
+        font-size: 12px;
+    }
+}
